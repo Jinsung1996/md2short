@@ -2,6 +2,14 @@
 
 마크다운 문서 한 장을 입력하면 한국어 9:16 숏폼 영상(1080x1920 MP4)을 자동으로 만들어 내는 로컬 CLI 제작 도구다. 일반 본문이나 `### N컷` 스토리보드 형식의 마크다운을 받아 한국어 내레이션 대본을 만들고(OpenAI), ElevenLabs TTS로 음성을 합성하고, ElevenLabs Scribe의 단어 타임스탬프(`words.json`)를 단일 시간 기준으로 삼아 자막·호랑이 이모티콘 cue·숫자 카드·오프닝·CTA를 Remotion으로 합성해 MP4 한 편을 렌더링한다. 모든 중간 산출물과 API 로그, QC 리포트는 `jobs/<job_id>/` 아래에 남아 재현·디버깅·비용 추적이 가능하다. 제품 요구사항은 [`docs/PRD.md`](docs/PRD.md), 시스템 설계는 [`docs/architecture.md`](docs/architecture.md), 문서 색인은 [`docs/README.md`](docs/README.md)를 따른다.
 
+## 데모
+
+마크다운 시황 리포트 한 장으로 만든 결과 영상의 앞 24초다. 전체 영상(48초, 음성 포함)은 [`docs/assets/demo.mp4`](docs/assets/demo.mp4)에 있다.
+
+<p align="center">
+  <img src="docs/assets/demo.gif" alt="MD2Short 데모: 오프닝 브리핑, 자막, 호랑이 이모티콘 cue, 숫자 카드" width="300">
+</p>
+
 ## 1. 사전 요구사항
 
 | 도구 | 용도 | 설치 |

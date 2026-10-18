@@ -1,0 +1,28 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Secrets (.env.example은 템플릿이라 커밋함)
+.env
+.env.*
+!.env.example
+
+# Tool caches / local agent state
+.pytest_cache/
+.ruff_cache/
+.omc/
+.DS_Store
+
+# Node
+node_modules/
+
+# 생성 산출물 (용량이 크고 재생성 가능)
+/jobs/
+/output/

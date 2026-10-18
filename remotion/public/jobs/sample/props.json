@@ -1,0 +1,39 @@
+{
+  "audioFileName": "jobs/sample/narration.mp3",
+  "wordsFileName": "jobs/sample/words.json",
+  "bgColor": "#FFFFFF",
+  "chunkSize": 14,
+  "emoticonCues": [
+    {
+      "emoticonFileName": "05_분석중_차트.png",
+      "startMs": 1300,
+      "durationMs": 1600,
+      "assetKind": "emoticon",
+      "visualMode": "emoticon",
+      "keyword": "상승"
+    },
+    {
+      "emoticonFileName": "03_굿굿_칭찬.png",
+      "startMs": 2900,
+      "durationMs": 1900,
+      "assetKind": "emoticon",
+      "visualMode": "emoticon",
+      "keyword": "마감"
+    }
+  ],
+  "captionSegments": [
+    { "startMs": 500, "endMs": 2200, "text": "나스닥은 0.94%" },
+    { "startMs": 2300, "endMs": 4800, "text": "상승 마감했습니다" }
+  ],
+  "companyLogoCues": [],
+  "numberCards": [
+    { "text": "0.94%", "startMs": 1300, "durationMs": 1600, "label": "나스닥" }
+  ],
+  "highlightKeywords": ["상승", "마감"],
+  "openingText": "26년 4월 28일 데일리 브리핑",
+  "openingDurationMs": 1200,
+  "showOpening": true,
+  "ctaText": "구독과 알람 설정, 큰 힘이 됩니다!",
+  "showOutro": true,
+  "durationInFrames": 180
+}

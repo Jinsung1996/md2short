@@ -1,0 +1,35 @@
+/*
+ * MD2Short caption/header font faces, loaded via staticFile("font/font.css").
+ *
+ * Placeholder: the real SeoulAlrim / SeoulNotice woff2 files are staged into
+ * this directory by the Python render layer. Until then these faces resolve
+ * through locally installed Korean fonts only (`local()` sources), so nothing
+ * 404s during local preview or render.
+ */
+
+@font-face {
+  font-family: "SeoulAlrim";
+  src: local("SeoulAlrimTTF-Heavy"), local("SeoulAlrim"),
+    local("Apple SD Gothic Neo"), local("Noto Sans KR");
+  font-weight: 700 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SeoulAlrim";
+  src: local("SeoulAlrimTTF-Medium"), local("SeoulAlrim"),
+    local("Apple SD Gothic Neo"), local("Noto Sans KR");
+  font-weight: 100 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SeoulNotice";
+  src: local("SeoulNoticeTTF-Bold"), local("SeoulNotice"),
+    local("Apple SD Gothic Neo"), local("Noto Sans KR");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,5 @@
+node_modules
+out
+public/jobs/*
+!public/jobs/sample
+.env
